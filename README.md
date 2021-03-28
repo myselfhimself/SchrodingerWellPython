@@ -1,4 +1,8 @@
-# Schrodinger Well Python
+# Schrodinger Well Python -> G'MIC
+
+Translation effort of a Python / Numpy image filter into the G'MIC language.
+See https://github.com/myselfhimself/SchrodingerWellPython/blob/main/schrodinger_well.gmic and https://github.com/weightan/SchrodingerWellPython/issues/1
+
 ***
 Python solver for timeless Schrodinger equation for well with arbitrary shape
 ***
