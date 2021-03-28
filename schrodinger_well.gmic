@@ -1,7 +1,7 @@
-N = 200
+N=200
 
-inWell = 1
-outWell = 0
+inWell=1
+outWell=0
 
 # mesh = makeCircleWellMatrix (N, inWell, outWell)
 
@@ -11,3 +11,8 @@ $1,$1,1,1 fill_color $3 circle 50%,50%,N/4,1,$2
 
 rep_hamiltonian:
 makeCircleWellMatrix $N,$inWell,$outWell unroll x
+No_points=N*N
+# x_intervals=np.linspace(0, 1, N)
+$N,1,1,1,x/($N-1)
+#increment = np.absolute(x_intervals[0] - x_intervals[1])
+#print ('increment ' + str(increment))
