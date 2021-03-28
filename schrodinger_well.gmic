@@ -1,0 +1,13 @@
+N = 200
+
+inWell = 1
+outWell = 0
+
+# mesh = makeCircleWellMatrix (N, inWell, outWell)
+
+
+makeCircleWellMatrix:
+$1,$1,1,1 fill_color $3 circle 50%,50%,N/4,1,$2
+
+rep_hamiltonian:
+makeCircleWellMatrix $N,$inWell,$outWell
