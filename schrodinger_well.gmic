@@ -1,15 +1,11 @@
-N=200
-
-inWell=1
-outWell=0
-
 # mesh = makeCircleWellMatrix (N, inWell, outWell)
-
-
 makeCircleWellMatrix:
-$1,$1,1,1 fill_color $3 circle 50%,50%,N/4,1,$2
+$1,$1,1,1 fill_color $3 circle 50%,50%,{$1/4},1,$2 
 
 rep_hamiltonian:
+N=200
+inWell=1
+outWell=0
 makeCircleWellMatrix $N,$inWell,$outWell unroll x
 No_points=N*N
 # x_intervals=np.linspace(0, 1, N)
